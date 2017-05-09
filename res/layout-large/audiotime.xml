@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2012 AndroidPlot.com
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+    
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/sample_activity"
+    android:layout_width="match_parent"
+    android:orientation="vertical"  
+    android:background="#ffffffff">
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/dBPlot"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="fill"
+        android:layout_weight="1"
+        androidPlot.domainLabel="time"
+        androidPlot.domainLabelWidget.labelPaint.color="#000000"
+        androidPlot.domainLabelWidget.labelPaint.textSize="12dp"
+        androidPlot.graphWidget.domainLabelPaint.color="#000000"
+        androidPlot.graphWidget.domainLabelPaint.textSize="12dp"
+        androidPlot.graphWidget.domainOriginLabelPaint.color="#000000"
+        androidPlot.graphWidget.domainOriginLabelPaint.textSize="12dp"
+        androidPlot.graphWidget.marginBottom="15dp"
+        androidPlot.graphWidget.marginLeft="25dp"
+        androidPlot.graphWidget.marginRight="25dp"
+        androidPlot.graphWidget.marginTop="8dp"
+        androidPlot.graphWidget.rangeLabelPaint.color="#000000"
+        androidPlot.graphWidget.rangeLabelPaint.textSize="12dp"
+        androidPlot.graphWidget.rangeOriginLabelPaint.color="#000000"
+        androidPlot.graphWidget.rangeOriginLabelPaint.textSize="12dp"
+        androidPlot.legendWidget.heightMetric.value="15dp"
+        androidPlot.legendWidget.iconSizeMetrics.heightMetric.value="10dp"
+        androidPlot.legendWidget.iconSizeMetrics.widthMetric.value="10dp"
+        androidPlot.legendWidget.positionMetrics.anchor="right_bottom"
+        androidPlot.legendWidget.positionMetrics.xPositionMetric.value="0"
+        androidPlot.legendWidget.textPaint.textSize="12dp"
+        androidPlot.legendWidget.widthMetric.value="1"
+        androidPlot.rangeLabel="Amplitude"
+        androidPlot.rangeLabelWidget.labelPaint.color="#000000"
+        androidPlot.rangeLabelWidget.labelPaint.textSize="12dp"
+        androidPlot.title="@string/app_name"
+        androidPlot.titleWidget.labelPaint.textSize="12dp"
+        androidPlot.titleWidget.labelPaint.color="#777777"  />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:background="#00000000"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        android:state_enabled="false"
+        android:clickable="false"
+        >
+
+        	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp"/>
+            
+        	<ImageButton
+                android:id="@+id/btnRecord"
+                android:src="@drawable/start_recording"
+                android:tag="isNotChecked"     
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="true"
+                android:background="#00000000"
+            />
+ 
+        	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp"/>
+            
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:src="@drawable/play_recording"
+                android:tag="isNotChecked"     
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="true"
+                android:background="#00000000"
+            />
+             
+         	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp" />
+            
+            <ImageButton
+                android:id="@+id/btnRange"
+                android:src="@drawable/auto_range"
+                android:tag="isNotChecked"     
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="true"
+                android:background="#00000000"
+            />
+ 
+        	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp"/>
+            
+            <ImageButton
+                android:id="@+id/btnReset"
+                android:src="@drawable/reset_graph_toggle"
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="false"
+                android:background="#00000000"
+                />
+            
+        	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp" />
+            
+            <ImageButton
+                android:id="@+id/btnFindPeak"
+                android:src="@drawable/find_peak_toggle"
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="false"
+                android:background="#00000000"
+                />
+            
+        	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp" />
+            
+             <ImageButton
+                android:id="@+id/btnFindThreshold"
+                android:src="@drawable/find_threshold_toggle"
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="false"
+                android:background="#00000000"
+                />
+            
+        	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp" />
+            
+        	
+        		<ImageButton
+                android:id="@+id/btnLeft"
+                android:src="@drawable/left_side_toggle"
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="false"
+                android:background="#00000000"
+                />
+            
+        	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp" />
+            
+        	<ImageButton
+                android:id="@+id/btnRight"
+                android:src="@drawable/right_side_toggle"
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="false"
+                android:background="#00000000"
+                />
+            
+        	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp" />
+            
+             <ImageButton
+                android:id="@+id/btnSave"
+                android:src="@drawable/save_recording_toggle"
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="false"
+                android:background="#00000000"
+                />
+ 
+        	<TextView
+            	android:id="@+id/txtSave"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp"/>
+        	
+           	           	      	
+        	<ImageButton
+                android:id="@+id/btnFFT"
+                android:src="@drawable/fft_toggle"
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="false"
+                android:background="#00000000"
+                />
+            
+           	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp" />	
+        	
+           	<ImageButton
+                android:id="@+id/btnHelp"
+                android:src="@drawable/help"
+                android:contentDescription="@string/app_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="fitXY"
+                android:state_enabled="true"
+                android:background="#00000000"
+                />
+            
+           	<TextView
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+            	android:clickable="false"
+            	android:text="@null"
+                android:state_enabled="false"
+            	android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

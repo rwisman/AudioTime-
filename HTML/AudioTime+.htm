@@ -1,0 +1,474 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Raymond F. Wisman">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link REL="stylesheet" href="basic.css" type="text/css">
+<link rel="icon" 
+      type="image/ico" 
+      href="favicon.ico"/>
+<title>AudioTime+</title>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#551A8B" 
+alink="#FF0000">
+
+	<table border="0" cellpadding="10" cellspacing="0">
+		<tr>
+			<td><font size="5"><b>Mobile Science </b></font>&nbsp;<a href="javascript:(function(){l=location.href;if(l.indexOf('translate')>=0){l=decodeURIComponent(l.replace(/^.*[&?](trurl|url|u)=/,'').replace(/[&?].*$/,''))};s=document.selection?document.selection.createRange().text:window.getSelection?window.getSelection().toString():document.getSelection?document.getSelection():'';lw=(s=='')?'http://translate.google.com/translate?u='+encodeURIComponent(l)+'&sl=auto&tl=es&anno=0':'http://translate.google.com/translate_t?text='+s+'&sl=auto&tl=es';wt=window.open(lw);if(window.focus){wt.focus()};})()" style="text-decoration: none"><font size="2">Español</font></a><font size="5"><img border="0" src="icon.png" align="left" hspace="0" style="border: 8px solid #FFFFFF; background-color: #FFFFFF" width="72" height="72"><b><br>
+			AudioTime<sup>+</sup></b></font> 
+	by Ray Wisman and Kyle Forinash<br>Indiana University SE. 
+
+				<blockquote>
+					<blockquote>
+						<h2><font size="4">Google Play</font><span style="font-size: 16pt"> 
+						- </span><font size="4">
+						<a href="https://play.google.com/store/apps/details?id=edu.ius.audiotimeplus">AudioTime</a></font><i><sup>+</sup></i></h2>
+						<p><b>YouTube</b> -
+						<a href="http://www.youtube.com/watch?v=dAfJIvapEFo">
+						http://www.youtube.com/watch?v=dAfJIvapEFo</a></p>
+					</blockquote>
+					<h2><span style="font-size: 16pt">Description</span></h2>
+					<blockquote>
+						<p><i>AudioTime<sup>+</sup></i> can time events by sound 
+						or photo gates and records, displays, 
+						saves, plays and finds dominant frequency of selected 
+						audio. </p>
+						<p>The application is designed for use in science 
+						education experiments that:</p>
+						<ul>
+							<li>measure the time interval between two audio 
+							events,</li>
+							<li>timing with photo resistors in a simple circuit 
+							(see below),</li>
+							<li>determine the dominant frequency of an interval 
+							of audio.</li>
+						</ul>
+						<p><i>AudioTime</i> can record sound via the headset 
+						port, <i>AudioTime</i>+ cannot. <i>AudioTime+</i> is a 
+						similar app that can also, with a simple circuit 
+						connected through the headset port, perform timing of 
+						photo-resistors or switches. </p>
+					</blockquote>
+					<p>The screen shot below shows two relatively loud audio events 
+					recorded and measured by AudioTime<i><sup>+</sup></i> occurring over a time interval of approximately 
+					0.453 
+					seconds. </p>
+					<blockquote>
+						<p>The first event is a scissors cutting a string 
+						holding a calculus book 1 meter above the floor. The 
+						second event is the book hitting the floor.</p>
+						<p>The predicted time of the 1 meter fall is 
+						approximately 0.451 seconds or a difference of about 
+						0.002 seconds from that measured by AudioTime<i><sup>+</sup></i>.</p>
+					</blockquote>
+			</blockquote></td>
+		</tr>
+	</table>
+
+	<blockquote>
+	<blockquote>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr>
+				<td>
+				<img border="0" src="Calculus.png" width="1280" height="800"></td>
+			</tr>
+		</table>
+	</blockquote>
+	<p>&nbsp;</p>
+	<p>Below figure illustrates estimating the frequency of a sine wave by measuring the time 
+	interval of 10 wave peaks as 0.005463004s. Counting more peaks would improve 
+	accuracy.</p>
+	<blockquote>
+		<p>period = 0.005463004s/10 </p>
+		<p>frequency = 1/period = 1830 Hz</p>
+		<p><img border="1" src="frequency.png"></p>
+	</blockquote>
+	<p>And the discrete Fourier transform of the same signal results give a 
+	dominant frequency of 1838 Hz.</p>
+	<blockquote>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr>
+				<td>
+				<img border="0" src="fftMeasurement.png" width="800" height="480"></td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+	</blockquote>
+	<table border="0" cellspacing="0">
+		<tr>
+			<td><b>Controls and Displays</b><blockquote>
+				<p>AudioTime<i><sup>+</sup></i> can record, display audio events, and measure the relative time of occurrence between two audio events.<br/>
+				<br/>Gestures select graph areas</p>
+				<blockquote>
+					<table border="1" cellpadding="10" cellspacing="0">
+						<tr>
+							<td>Tap one finger to mark the interval yellow.<p>Drag the yellow interval mark.</p>
+					<p>Two finger pinch or squeeze to zoom.</p>
+					<p>Drag to pan left and right.</p>
+					<p>Tap twice to remove yellow markers.</p>
+							</td>
+						</tr>
+					</table>
+				</blockquote>
+				<p>Button function</p>
+				<blockquote>
+					<table border="1" cellpadding="10" cellspacing="0">
+						<tr>
+							<td>
+							<img border="0" src="start_recording.png" width="50" height="50"/>&nbsp;&nbsp; Start&nbsp;&nbsp;&nbsp;
+							<img border="0" src="stop_recording.png" width="50" height="50">&nbsp; 
+							Stop&nbsp;&nbsp;
+							<img border="0" src="play_recording.png" width="50" height="50">&nbsp;&nbsp; 
+							Play recording.<p>
+							<img border="0" src="left_side.png" width="50" height="50">&nbsp;&nbsp; 
+							Left&nbsp;&nbsp; &nbsp;&nbsp;
+							<img border="0" src="right_side.png" width="50" height="50">&nbsp; 
+							Right end of samples.</p>
+							<p>
+							<img border="0" src="auto_range.png" width="50" height="50">&nbsp;&nbsp; 
+							Toggle auto range.</p>
+							<p>
+							<img border="0" src="reset_graph.png" width="50" height="50">&nbsp;&nbsp; Reset 
+				window to full.</p>
+							<p>
+							<img border="0" src="save_recording.png" width="50" height="50">&nbsp;&nbsp; Save 
+				the window samples.</p>
+							<p>
+							<img border="0" src="fft.png" width="50" height="50">&nbsp;&nbsp; 
+							Dominant frequency of window (*FFT).</p>
+							<p>
+							<img border="0" src="find_peak.png" width="50" height="50">&nbsp;&nbsp; 
+							Find highest peak amplitude of window.</p>
+							<p>
+							<img border="0" src="find_threshold.png" width="50" height="50">&nbsp;&nbsp; 
+							Find threshold, 80% from highest peak to lowest of 
+							window.</p>
+							<p>
+							<img border="0" src="help.png" width="50" height="50">&nbsp;&nbsp;&nbsp; 
+							Help and information.</p></td>
+						</tr>
+					</table>
+					<p>*Uses the largest FFT window that fits within the display 
+					window. Larger FFT window sizes give more low frequency 
+					resolution but less temporal resolution.</p>
+				</blockquote>
+			</blockquote>
+			</td>
+		</tr>
+		</table>
+</blockquote><p><b>Some uses</b></p>
+<blockquote>
+	<b>Doppler shift - </b>Classic case: a train horn sound is a higher 
+	frequency when approaching than receding.<p>Can determine train's velocity 
+	from the Doppler shift, assuming a constant velocity and direction. </p>
+	<blockquote>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr>
+				<td>v<sub>sound</sub> = Speed of sound at temperature T = 
+				331.3+0.606*T<br>
+				v<sub>source</sub> = Velocity of approaching sound source <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = v<sub>sound</sub> 
+				- (frequency<sub>stationary </sub>*<sub> </sub>v<sub>sound</sub>)/frequency<sub>approaching</sub></td>
+			</tr>
+		</table>
+	</blockquote>
+	<p>For testing, a constant frequency sound can be generated by a <i>waveform generator</i> app, use one phone as a 
+	sound source the other to record and analyze. </p>
+	<p>
+	Procedure:</p>
+	<ol>
+		<li>Record a stationary sound source using <i>AudioTime<sup>+</sup></i>. </li>
+		<li>Find dominant frequency.</li>
+		<li>Record constant velocity of moving sound source using <i>AudioTime<sup>+</sup></i>. 
+		Running past the recorder provides a reasonable test.</li>
+		<li>Find dominant frequency as sound source approaches. To determine the 
+		approaching shift, locate the greatest recorded amplitude occurring when 
+		the source is nearest the recorder. Avoid including samples taken after 
+		the source passes the recorder which will corrupt the frequency 
+		analysis. Display a second or two of samples taken immediately before 
+		the greatest amplitude.</li>
+		<li>Enter below measures. The air temperature is insignificant at normal 
+		room temperatures. </li>
+	</ol>
+<script language ="JavaScript">
+function Velocity() {
+	vc=331.3+0.606*document.Doppler.T.value;
+	vs=-(document.Doppler.fs.value*vc)/document.Doppler.fr.value+vc;
+	
+	document.Doppler.vs.value=vs;
+}
+</script>
+	<blockquote>
+		<blockquote>
+			<form name="Doppler">
+				<table border="0" cellpadding="10" cellspacing="0">
+					<tr>
+						<td>
+						<p align="right">Air temperature C</td>
+						<td>
+						<INPUT Type="text" Name="T" Value="20" Size="6" onChange="Velocity()"/></td>
+					</tr>
+					<tr>
+						<td>
+						<p align="right">Stationary Hz</td>
+						<td>
+						<INPUT Type="text" Name="fs" Value="1838" Size="6" onChange="Velocity()"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p align="right">Approaching Hz</td>
+						<td>
+						<input type="text" name="fr" value="1849" size="6" onChange="Velocity()"/>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Approaching velocity m/s</td>
+						<td>
+						<INPUT Type="text" Name="vs" Value="Velocity" Size="10"/></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+						<input type="button" value="Velocity" onClick="Velocity()"/></td>
+					</tr>
+				</table>
+			</form>
+
+<script language ="JavaScript">
+	vc=331.3+0.606*document.Doppler.T.value;
+	vs=-(document.Doppler.fs.value*vc)/document.Doppler.fr.value+vc;
+	
+	document.Doppler.vs.value=vs;
+</script>
+		</blockquote>
+	</blockquote>
+	<b>Event timing using sound - </b>Time the duration between the start and end sound of 
+	an event.<p>Can determine average speed of a runner, bicyclist or other 
+	moving object. </p>
+	<blockquote>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr>
+				<td>Average speed = distance / time</td>
+			</tr>
+		</table>
+	</blockquote>
+	<p>
+	Procedure:</p>
+	<ol>
+		<li>Place some bubble wrap on the floor and the recorder in the middle 
+		so that delay of each bubble wrap sound reaching the recorder is 
+		approximately equal.</li>
+		<li>Record the moving object (e.g. runner) hitting the bubble wrap using <i>AudioTime<sup>+</sup></i>. </li>
+		<li>Locate the two bubble wrap recorded amplitudes. A bubble wrap sound 
+		interval of 1.265s and spacing of 5 meters gives:<blockquote>
+			<p>Average speed = distance / time = 5 m / 1.265 s = 3.95 m/s or 
+			about 8.83 mph</p>
+		</blockquote>
+		</li>
+	</ol>
+	<p><img border="0" src="screenshot.png" style="border-style: groove; border-width: 1px" hspace="30"></p>
+	<p>&nbsp;</p>
+	<b>Event timing using photo resistors - </b>Time the duration between 
+	passing through two photo resistors.<p>Can determine average speed of a runner, bicyclist or other 
+	moving object. </p>
+	<blockquote>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr>
+				<td>Average speed = distance / time</td>
+			</tr>
+		</table>
+	</blockquote>
+	<p>Procedure:</p>
+	<ol>
+		<li>Connect two photo resistors in series.</li>
+		<li>Place the photo resistors and light source about knee high for a 
+		runner.</li>
+		<li>Record the moving object (e.g. runner) hitting the photo gates using
+		<i>AudioTime<sup>+</sup></i>. </li>
+		<li>Locate the two photo resistor recorded amplitudes. When the object 
+		(e.g. runner) blocks the light source to the photo resistor, resistance 
+		increases and amplitude decreases.<p>An 
+		interval of 2.5 s and spacing of 5 meters gives:</p>
+		<blockquote>
+			<p>Average speed = distance / time = 5 m / 2.5 s = 2 m/s or 
+			about 4.47 mph</p>
+		</blockquote></li>
+	</ol>
+	<p>
+	<img border="0" src="photogate.png" style="border-style: groove; border-width: 1px" hspace="30"></p>
+</blockquote>
+	<p>&nbsp;</p>
+<p><b>Photo resistor timing circuit</b></p>
+	<blockquote>
+		<table border="0" cellpadding="10" cellspacing="0">
+		<caption>Photo resistor circuit and AudioTime<sup>+</sup> app.</caption>
+			<tr>
+				<td>
+		<img border="0" src="photogatetimingcircuit.jpg" width="1048" height="783"><p>The 
+		<i>AudioTime<sup>+</sup></i> app with the circuit below connected 
+		through the headset measures the resistance of
+					R<sub>3</sub>, reducing the amplitude as resistance 
+		increases. In the display, the photo resistor detected a light at 1.35 s 
+		and again at 2.74 s as indicated by the yellow markers.</p></td>
+			</tr>
+		</table>
+		<p>Changing
+					R<sub>3</sub> to a 10K photoresistor can be used for timing.</p>
+		<blockquote>
+			<table border="1" cellpadding="10" cellspacing="0"><caption>Circuit 
+				with fixed resistor</caption>
+				<tr>
+					<td>
+					<img border="0" src="circuit.png" width="264" height="156"><p>R<sub>1</sub> = 10k&#937;<br>
+					R<sub>2</sub> = 220&#937;<br>
+					R<sub>3 </sub>= 
+					photo resistor or other variable resistor<br>
+					C = 0.1&#956;F</td>
+				</tr>
+			</table>
+		</blockquote>
+		<p>The standard four-pole headset jack with connections:</p>
+		<blockquote>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr>
+					<td>tip</td>
+					<td>Left speaker</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Right speaker</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Ground</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Microphone</td>
+				</tr>
+			</table>
+		</blockquote>
+		<p>R<sub>3</sub> can be connected to the circuit by a section of headset 
+		cable.</p>
+	</blockquote>
+<p><b>Technical details</b></p>
+	<blockquote>
+		<p>Audio input/output- Sample rate of 44.1 KHz, one channel giving a 
+		time resolution of 1/22050 seconds or 0.00004535147392 seconds.</p>
+		<p>Headset circuit timing - Connecting the circuit causes the app to 
+		generate a 4 KHz sine wave as output while sampling the input passed 
+		through the circuit at 44.1 KHz. Timing resolution is defined by the 4 
+		KHz sine wave with a period of 0.00025 s, a minimum of two waves are 
+		needed to measure a change so the best one can hope for is about 0.0005 
+		s resolution. In practice, the circuit and ambient noise may induce 
+		additional measurement uncertainties.</p>
+		<p>Discrete Fourier Transform - A standard FFT is performed on sample 
+		sizes of 65536 or less. Ensemble spectral averaging is used to construct 
+							the spectrum of continuous audio too large for a 
+							single FFT transformation. The frequency spectrum 
+		for groups of 65536 samples is computed, normalized for that sample 
+		group, summed and finally averaged with the spectrum of other groups of 
+		65536 samples. While allowing large sample sizes to be analyzed, when 
+		audio is long and varied the resulting spectrum magnitude or power is 
+		correspondingly reduced (i.e. no normalized frequency has magnitude of 
+		1). One possible solution is to perform the FFT on selected segments. Windows smaller than 65536 samples are 
+		rounded down to the largest power of two.</p>
+		<p>File format - Saved as a standard WAV file format with no 
+		compression, 44.1 KHz, one channel.</p>
+		<p>Window display - Only 1000 raw sample points are displayed at a time 
+		meaning that a recording of more than 1000/44100 seconds will not be 
+		fully displayed. That's why the display jumps when zooming or panning, 
+		as different sample points are displayed. The 1000 point limit was 
+		tradeoff between display fidelity and user interface responsiveness, 
+		more points = slower zooms and pans. </p>
+	</blockquote>
+	<p><b>References for further examination of Mobile Science apps and use</b></p>
+	<blockquote>
+		<p>R. Wisman, K. Forinash; 'Science in Your Pocket', International 
+		Journal on Hands-on Science (IJHSCI) Vol. 1, No. 1, September (2008) 
+		p7-15.</p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Acceleration&#8217;. 
+		Measures acceleration. Apple App 
+		Store (https://itunes.apple.com/us/app/mobile-science-acceleration/id389821809?mt=8).</p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Temperature&#8217;. 
+		Measures temperature using a simple circuit attached to the headset jack 
+		of an iOS mobile device. Apple App 
+		Store (http://itunes.apple.com/us/app/mobile-science-temperature/id467423322?mt=8).
+		</p>
+		<p>R. Wisman and K. Forinash, &#8216;Mobile Science - Ohmmeter&#8217;. Application 
+		to measure resistance using a simple circuit attached to the headset 
+		jack of an iOS mobile device. Apple App 
+		Store, April 2013. https://itunes.apple.com/us/app/ohmmeter/id628027479?mt=8</p>
+		<p>K. Forinash and R. Wisman, &#8216;Mobile Science &#8211; Ohmmeter<sup>+</sup>&#8217;. Converts 
+		resistance to other units determined by arbitrary user defined equation. 
+		Application measures resistance using a simple circuit attached to the 
+		headset jack of an iOS mobile device. August 2013. https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=685431874&amp;mt=8</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioTime'. Records, 
+		displays, saves, plays and finds dominant frequency of selected audio. 
+		November 2013. https://play.google.com/store/apps/details?id=edu.ius.audiotime</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioTime+'. AudioTime+ 
+		can time events by sound or photo gates and records, displays, saves, 
+		plays and finds dominant frequency of selected audio. 
+		November 2013. https://play.google.com/store/apps/details?id=edu.ius.audiotimeplus</p>
+		<p>R. Wisman and K. Forinash, 'Mobile Science - AudioSpectrum'. 
+		AudioSpectrum displays the frequency spectrum of a WAV file or audio 
+		sourced from AudioTime or AudioTime+ apps. 
+		December 2013. https://play.google.com/store/apps/details?id=edu.ius.audiospectrum</p>
+		<p>R. Wisman, K. Forinash; 'Mobile Science', Ubiquitous Learning; An 
+		International Journal, Vol. 3 No. 1 (2011) p21-34.</p>
+		<p>R. Wisman and K. Forinash, &#8216;Smartphones as portable oscilloscopes for 
+		physics labs&#8217;, The Physics Teacher, Vol. 50 No. 4 (2012) p242.</p>
+		<p>K. Forinash and R. Wisman, &#8216;Smartphones - Experiments with an 
+		External Thermistor Circuit&#8217;, The Physics Teacher, Vol. 50 No. 9 (2012) 
+		p566.</p>
+		<p>K. Forinash and R. Wisman, &#8216;Smartphones as Data Collection Tools for 
+		Science Education&#8217;, International Newsletter on Physics Education, Vol. 
+		64 (2013). </p>
+		<p>K. Forinash and R. Wisman, 'Using smartphones as science laboratory 
+		instruments', American Association of Physics Teachers, Portland, July 
+		13-17, 2013</p>
+	</blockquote>
+	<p><b>Acknowledgements</b></p>
+	<blockquote>
+		<p>Columbia University MEAPsoft for Java version of FFT.</p>
+		<p>Douglas L. Jones, University of Illinois at Urbana-Champaign, for 
+		original FFT version in C. http://cnx.rice.edu/content/m12016/latest/</p>
+		<p>AndroidPlot.com for plotting library and examples.</p>
+	</blockquote>
+<p><b>Legalese</b></p>
+	<blockquote>
+		<p>This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.</p>
+	</blockquote>
+	<p><b>Contacts</b></p>
+	<blockquote>
+		<p>R. Wisman (<script language="javascript">
+document.write('<a href="mailto:rwisman');
+document.write('@');
+document.write('ius.edu">rwisman');
+document.write('@');
+document.write('ius.edu</a>');
+      </script>
+) for 
+		software questions.</p>
+		<p>K. Forinash (<script language="javascript">
+document.write('<a href="mailto:kforinas');
+document.write('@');
+document.write('ius.edu">kforinas');
+document.write('@');
+document.write('ius.edu</a>');
+      </script>
+) 
+		for physics or educational use questions.</p>
+	</blockquote>
+
+</body>
+
+</html>

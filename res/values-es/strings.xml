@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AudioTime+</string>
+	<string name="start_recording">\tComience muestras de grabación.</string>
+	<string name="stop_recording">\tDetener la grabación.</string>
+	<string name="save_recording">\tGuardar las muestras.</string>
+	<string name="play_recording">\tJugar las muestras.</string>
+	<string name="left_side">\tExtremo izquierdo de las muestras.</string>
+	<string name="right_side">\tExtremo derecho de muestras.</string>
+	<string name="auto_range">\tAuto rango intercambio de amplitud.</string>
+	<string name="fft">\tDeterminar la frecuencia dominante (FFT).</string>
+	<string name="help">\tAyuda e información.</string>
+	<string name="reset_graph">\tRestablecer ventana de tiempo completo muestra grabada.</string>
+	<string name="range_label">Amplitud</string>
+	<string name="domain_label">tiempo</string>
+	<string name="interval_label">Intervalo</string>	
+	<string name="recommended">Tamaño recomendado ventana: </string>	
+	<string name="frequency">Frecuencia: </string>
+	<string name="window">Ventana: </string>
+	<string name="samples">Muestras: </string>
+	<string name="fft_title">FFT resultados</string>
+		<string name="info">AudioTime+ puede grabar, visualizar eventos de audio, medir el tiempo relativo de ocurrencia entre dos o mas eventos de audio o eventos de puerta foto, determinar la frecuencia dominante de un segmento de audio.\n
+						Gestos áreas seleccionadas del gráfico: \n
+						Toque un dedo para marcar el amarillo intervalo. \n
+						Arrastre la marca de intervalo amarillo. \n
+						Dos de dedos o apretar al zoom. \n
+						Arrastre mueva a la izquierda y la derecha. \n
+						Toque dos veces para eliminar marcas amarillas. \n
+	</string>
+	
+</resources>
